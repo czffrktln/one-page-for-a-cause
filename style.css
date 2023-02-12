@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navContainer {
+  position: fixed;
+  top: 0vw;
+  padding-right: 13rem;
+  padding-left: 4rem;
+  width: 100vw;
+  background-color: rgba(0, 140, 255, 0.521);
+  /* background-color: #75b1d6; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+#navFiller {
+  height: 5.9rem;
+  /* background-color: rgba(0, 140, 255, 0.521); */
+}
+
+#sticker {
+  position: fixed;
+  right: -2vw;
+  top: 0;
+  width: 15vw;
+  height: 10vw;
+
+}
+.navButton {
+  text-decoration: none;
+  color: white;
+  font-size: 3vh;
+}
+
+.navButton:hover {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#hospitalName {
+  padding-right: 10vw;
+  color: white;
+}
+.navButton,  #hospitalName{
+  font-family: "Cormorant";
+}
+
+#hospitalName > :nth-child(2) {
+  font-size: 2vw;
+  
+}
+#hospitalName > :nth-child(3) {
+  text-transform: uppercase;
+
+}
+
+#anchorAbout, #anchorDepartments, #anchorContact{
+  position: relative;
+  top: -5.9rem; 
+  height: 20px;
+  width: 20px;
+}
+/* .mainSection::before {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  margin-top: -7vw;
+  height: 7vw;
+} */
+
+#About{
+  padding-top: 6.5vw;   /* EZ KELL, VAGY 1 ELVÁLSZTÓ SÁV ÉS ARRA KELL UGORJON A NAV-GOMB (mint a #navFiller-nél*/
+}
+
+.hero {
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 140, 255);
+    
+}
+
+.hero img{
+    height: 100%;
+  animation: move 70s ease infinite;
+  /* Add infinite to loop. */
+  -ms-animation: move 70s ease;
+  -webkit-animation: move 70s ease;
+  animation: move 70s ease;
+  -moz-animation: move 70s ease;
+  position: absolute;
+    opacity: 0.7;
+}
+
+
+@keyframes move {
+  0% {
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+    transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.0);
+    /* Opera */
+
+    -moz-transform: scale(1.0);
+    /* Firefox */
+  }
+  100% {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.5);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.5);
+    /* Opera */
+
+    -moz-transform: scale(1.5);
+    /* Firefox */
+  }
+}
+
+.textDiv{
+    position: absolute;
+    left: 20%;
+    height: 35%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+   background-color: #0000009b;
+    border-radius: 20px;
+    color: #dfe1c4;
+    font-family: 'Cormorant';
+    box-shadow: rgba(0, 0, 0, 0.598) 0px 8px 24px;
+}
+
+.textDiv button{
+    padding: 15px;
+    color: white;
+    border:none;
+    background-color:#7AC3FF;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+  }
+
+.textDiv button:hover{
+    background-color: #19224b;
+    color:#dfe1c4;
+    transition: all 500ms ease;
+}
+
+#picDiv{
+  height:40vh;
+  width: 100%;
+  margin-top: 2.5em;
+  background-image: url("img/2parallax.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  font-family: 'Cormorant';
+  overflow: hidden;
+}
+#picDiv button{
+  padding: 15px;
+  color: white;
+  border:none;
+  background-color:#7AC3FF;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+}

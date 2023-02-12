@@ -1,0 +1,61 @@
+/* ennek közösen kellene a beállításait meghatározni */
+.title-of-section {
+    font-family: 'Cormorant';
+    font-weight: bold;
+    font-size: xx-large;
+    letter-spacing: 1em;
+    padding: 1em 0em;
+}
+.title-of-section2 {
+    font-family: 'Cormorant';
+    font-weight: bold;
+    font-size: xx-large;
+    letter-spacing: 0.5em;
+    padding: 1em;
+}
+
+#about-section-container {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    position: relative;
+}
+#about-image-container{
+    position: relative;
+    width: 40%;
+}
+#about-image0 {
+
+    opacity: 0.3;
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    z-index: 1;
+    width: 120px;
+}
+
+#about-image1 {
+    width: 200px;
+    position: absolute;
+    top: -5%;
+}
+
+#about-image2 {
+    width: 250px;
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    opacity: 0.85;
+}
+
+#about-paragraph-container {
+    width: 80%;
+    padding: 15px;
+    background-color: rgba(0, 140, 255, 0.521);
+}
+
+#about-paragraph-container p {  
+    font-family: "Open Sans";
+    text-align: justify;
+    color: white;
+}
